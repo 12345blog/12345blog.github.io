@@ -82,9 +82,9 @@ highlight:
 ```
 
 
-## 使用 GitHub Actions 自动构建并发布到 GitHub Pages
+## 自动构建并发布到 GitHub Pages
 
-配置 `.github/workflows/ci.yml`：
+（使用 GitHub Actions）配置 `.github/workflows/ci.yml`：
 
 ```yaml
 name: Auto Deploy
