@@ -1,0 +1,91 @@
+root: /
+
+Home: /
+
+language: en
+
+author: iGuan7u
+description: A beautiful & simple theme.
+
+# AvatorURL
+# it would be shown on sidecar.
+
+avatar:
+
+# Comment
+
+gitalk:
+  enable: true
+  clientID: 218f7255dbb3f92486e0
+  clientSecret: f93df66c267c6a641454ee6a4cf33d2d55d70250
+  repo: gitalk
+  owner: 12345blog
+  admin: hineosmith
+
+disqus:
+  enable: false
+  shortname: your_disqus_short_name
+
+# Contact_Info
+# Contact info will be shown on the side bar.
+
+contact:
+  enable: false
+  description: 'Contact Info description'
+
+  twitter:
+    enable: false
+    username: twitter_username
+
+  github:
+    enable: false
+    username: github_username
+
+  weibo:
+    enable: false
+    username: weibo_username
+
+  facebook:
+    enable: false
+    username: facebook_username
+
+  instagram:
+    enable: false
+    username: instagram_username
+
+
+# Analytice
+
+mta_analytics:
+  enable: false
+  name: mta_analytics_name
+  sid: mta_analytics_sid
+
+baidu_analytics:
+  enable: true
+  id: 582eedb88e03346b456d315000357414
+
+google_analytice:
+  enable: true
+  tracking_id: G-QCFG5YFJC3
+
+# Website ICPLicense
+# which is useful in China mainland.
+
+ICPLicense:
+  enable: false
+  content: "Fill IPCLicense"
+
+# EtraPlugin
+
+extra_plugin:
+  enable: false
+  url: extra_plugin_js_url
+
+# Development Setting
+
+node_sass:
+  # outputStyle: nested
+  outputStyle: compressed
+  precision: 5
+  sourceComments: false

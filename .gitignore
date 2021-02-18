@@ -1,0 +1,11 @@
+.idea
+notes
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+dist/
+.deploy*/
+package-lock.json
+yarn.lock
