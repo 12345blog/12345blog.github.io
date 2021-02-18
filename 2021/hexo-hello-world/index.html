@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="zh_CN">
+    <head>
+        <title>Hexo 搭建记录 Hello World</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="manifest" href="/site.webmanifest">
+
+        
+    
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    
+    <link rel='stylesheet' href="/./css/dracula.css">
+
+    <meta name="generator" content="Hexo 5.3.0"></head>
+    <body>
+        <header class="al_header al_pos_fixed">
+    <div class="al_header_container dis_flex_jcenter">
+        <div class="al_header_container_left">
+            <div class="al_header_site_title">
+                <a href="/">12345.blog</a>
+            </div>
+        </div>
+
+        <div class="dis_flex_jcenter">
+            <div class="al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-menu"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="al_sidebar">
+
+    <div class="al_sidebar_overlay al_full_cover"></div>
+
+    <div class="al_pos_fixed al_sidebar_cnt">
+        <div class="dis_flex_acenter al_sidebar_header">
+            <h3>12345.blog</h3>
+            <div class="al_sidebar_close al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-close"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="al_sidebar_author_cnt">
+
+            <div class="al_sidebar_author_info">
+                <h4>Neo Smith</h4>
+                <img class="al_sidebar_avatar" src="https://secure.gravatar.com/avatar/4927b9863674cda74b85dbce5acc6ab6?s=800&d=identicon">
+                <p>懂一点代码的独立投资人。投资方向：新科技、物联网、生物医药、加密货币。</p>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+        
+    <div class="dis_flex_center al_lightbox_cnt al_full_cover">
+        <img class="al_lightbox_img"/>
+    </div>
+    <div class="al_page_background dis_flex_center al_full_cover"></div>
+    <div class="al_page_container">
+        <div class="al_pos_ab al_fake_background"></div>
+        <div class="al_main_container al_shadow al_main_page_container">
+            <article class="al_article">
+                <header>
+                    <h1 class="al_page_title">
+                        Hexo 搭建记录 Hello World
+                    </h1>
+                    <div class="al_page_info dis_flex">
+                        <div class="al_page_content_info">
+                            Mon January 18, 2021 10:31 PM
+                        </div>
+
+                        
+                            <div class="al_page_content_info">
+                                531 words
+                            </div>
+                        
+
+                        
+                            <div class="al_page_content_info">
+                                2 minutes read
+                            </div>
+                        
+                        <span class="tags"></span>
+                    </div>
+                </header>
+
+                
+                    <div class="al_page_content_outline">
+                        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%20-Hexo-%20%E6%90%AD%E5%BB%BA%E7%9A%84%E5%8D%9A%E5%AE%A2"><span class="toc-text">用 Hexo 搭建的博客 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA"><span class="toc-text">基础搭建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%20-Acetolog-%20%E4%B8%BB%E9%A2%98%E5%B9%B6%E8%AE%BE%E7%BD%AE%E5%9B%BE%E6%A0%87%E5%92%8C%E5%A4%B4%E5%83%8F"><span class="toc-text">安装 Acetolog 主题并设置图标和头像</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#favicon-%20%E5%9B%BE%E6%A0%87%E6%96%87%E4%BB%B6"><span class="toc-text">favicon 图标文件 </span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E6%95%B4%E7%AB%99%20-config-yml-%20%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF"><span class="toc-text">设置整站 _config.yml 配置信息 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%20-GitHub-Actions-%20%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E5%B9%B6%E5%8F%91%E5%B8%83%E5%88%B0%20-GitHub-Pages"><span class="toc-text">使用 GitHub Actions 自动构建并发布到 GitHub Pages</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8B%AC%E7%AB%8B%E5%9F%9F%E5%90%8D"><span class="toc-text">独立域名 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A2%9E%E5%8A%A0%20-https-%20%E6%94%AF%E6%8C%81"><span class="toc-text">增加 https 支持</span></a></li></ol></li></ol>
+                    </div>
+                
+
+                
+                <section id="post-body">
+                    <h2 id="用 -Hexo- 搭建的博客"><a href="# 用 -Hexo- 搭建的博客" class="headerlink" title="用 Hexo 搭建的博客"></a>用 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> 搭建的博客 </h2><p> 好处不用说了，比如可以直接写 <code>Markdown</code> 等等，搜索 <code>Hexo</code> 会得到一大把相关说明甚至教程。</p>
+<p><code>Hello World</code> 就用来存这个 blog 的搭建过程和基本配置吧。</p>
+<p>如果后续有工具或组件的更新，也会写在这篇内容里…… </p>
+<h3 id="基础搭建"><a href="# 基础搭建" class="headerlink" title="基础搭建"></a>基础搭建</h3><blockquote>
+<p>确认 <code>node.js</code> 和 <code>yarn</code> 已经准备好</p>
+</blockquote>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs console"><span class="hljs-meta">$</span><span class="bash"> npm i -g hexo-cli</span><br><span class="hljs-meta">$</span><span class="bash"> npm init blog</span><br><span class="hljs-meta">$</span><span class="bash"> <span class="hljs-built_in">cd</span> blog</span><br><span class="hljs-meta">$</span><span class="bash"> yarn</span><br><br><span class="hljs-meta">#</span><span class="bash"><span class="hljs-comment"># 自动显示字数和阅读时间</span></span><br><span class="hljs-meta">$</span><span class="bash"> yarn add hexo-wordcount</span><br><br><span class="hljs-meta">#</span><span class="bash"><span class="hljs-comment"># 自动在中文和英文之间加入空格</span></span><br><span class="hljs-meta">$</span><span class="bash"> yarn add hexo-filter-auto-spacing</span><br><br><span class="hljs-meta">#</span><span class="bash"><span class="hljs-comment"># 自动摘要（我没装，感觉我选的主题不装它更美观，有需要的同学自己动手吧）</span></span><br><span class="hljs-meta">$</span><span class="bash"> yarn add hexo-auto-excerpt</span><br><br><span class="hljs-meta">#</span><span class="bash"><span class="hljs-comment"># 自动实时预览</span></span><br><span class="hljs-meta">$</span><span class="bash"> npm i -g browser-sync</span><br><span class="hljs-meta">$</span><span class="bash"> yarn add --dev hexo-browsersync</span><br></code></pre></td></tr></table></figure>
+<h3 id="安装 -Acetolog- 主题并设置图标和头像"><a href="# 安装 -Acetolog- 主题并设置图标和头像" class="headerlink" title="安装 Acetolog 主题并设置图标和头像"></a>安装 Acetolog 主题并设置图标和头像</h3><blockquote>
+<p>Acetolog: <a target="_blank" rel="noopener" href="https://github.com/iGuan7u/Acetolog">https://github.com/iGuan7u/Acetolog</a></p>
+</blockquote>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs console"><span class="hljs-meta">$</span><span class="bash"> yarn add hexo-renderer-swig</span><br><span class="hljs-meta">$</span><span class="bash"> <span class="hljs-built_in">cd</span> themes</span><br><span class="hljs-meta">$</span><span class="bash"> git <span class="hljs-built_in">clone</span> https://github.com/iGuan7u/Acetolog</span><br></code></pre></td></tr></table></figure>
+
+<h4 id="favicon- 图标文件"><a href="#favicon- 图标文件" class="headerlink" title="favicon 图标文件"></a>favicon 图标文件 </h4><p> 由 <a target="_blank" rel="noopener" href="https://favicon.io/">favicon.io</a> 生成，解矸后存放在资源文件夹 <code>source</code> 里</p>
+<h3 id="设置整站 -config-yml- 配置信息"><a href="# 设置整站 -config-yml- 配置信息" class="headerlink" title="设置整站 _config.yml 配置信息"></a>设置整站 <code>_config.yml</code> 配置信息 </h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">title:</span> <span class="hljs-number">12345.</span><span class="hljs-string">blog</span><br><span class="hljs-attr">subtitle:</span> <span class="hljs-string">Neo</span> <span class="hljs-string">Smith&#x27;s</span> <span class="hljs-string">blog</span><br><span class="hljs-attr">description:</span> <span class="hljs-string"> 懂一点代码的独立投资人</span><br><span class="hljs-attr">bio:</span> <span class="hljs-string">Valuable</span> <span class="hljs-string">or</span> <span class="hljs-string">interesting</span><br><span class="hljs-attr">keywords:</span> <span class="hljs-string">Neo</span> <span class="hljs-string">Smith</span> <span class="hljs-string">NeoSmith</span><br><span class="hljs-attr">author:</span> <span class="hljs-string">Neo</span> <span class="hljs-string">Smith</span><br><span class="hljs-comment">#language: en</span><br><span class="hljs-attr">language:</span> <span class="hljs-string">zh_CN</span><br><span class="hljs-comment">#timezone: Asia/Shanghai</span><br><span class="hljs-attr">timezone:</span> <span class="hljs-string">&#x27;&#x27;</span><br><span class="hljs-attr">avatar:</span> <span class="hljs-string">https://secure.gravatar.com/avatar/4927b9863674cda74b85dbce5acc6ab6?s=800&amp;d=identicon</span><br><span class="hljs-attr">url:</span> <span class="hljs-string">https://12345.blog</span><br><span class="hljs-attr">permalink:</span> <span class="hljs-string">:year/:title/</span>  <span class="hljs-comment"># 永久链接格式</span><br><span class="hljs-attr">auto_spacing:</span> <span class="hljs-literal">true</span>  <span class="hljs-comment"># 自动在中文和英文之间加入空格</span><br><br><span class="hljs-attr">public_dir:</span> <span class="hljs-string">dist</span>  <span class="hljs-comment"># 更改发布目录为 ./dist</span><br><br><span class="hljs-attr">theme:</span> <span class="hljs-string">Acetolog</span>  <span class="hljs-comment"># 使用 Acetolog 主题</span><br><span class="hljs-attr">highlight:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">hljs:</span> <span class="hljs-literal">true</span>  <span class="hljs-comment"># 开启代码高亮</span><br><br><span class="hljs-comment"># 其它的要么不必要修改，要么还不知道是啥，就这样吧</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="使用 -GitHub-Actions- 自动构建并发布到 -GitHub-Pages"><a href="# 使用 -GitHub-Actions- 自动构建并发布到 -GitHub-Pages" class="headerlink" title="使用 GitHub Actions 自动构建并发布到 GitHub Pages"></a>使用 GitHub Actions 自动构建并发布到 GitHub Pages</h2><p>配置 <code>.github/workflows/ci.yml</code>：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">name:</span> <span class="hljs-string">Auto</span> <span class="hljs-string">Deploy</span><br><br><span class="hljs-attr">on:</span><br>  <span class="hljs-attr">push:</span><br>    <span class="hljs-attr">branches:</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-string">main</span><br><br><span class="hljs-attr">jobs:</span><br>  <span class="hljs-attr">auto-deploy:</span><br>    <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span><br>    <span class="hljs-attr">steps:</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">timezone</span><br>        <span class="hljs-attr">run:</span> <span class="hljs-string">export</span> <span class="hljs-string">TZ=&#x27;Asia/Shanghai&#x27;</span><br><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">checkout</span><br>        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout@v2</span><br>        <span class="hljs-attr">with:</span><br>          <span class="hljs-attr">persist-credentials:</span> <span class="hljs-literal">false</span><br><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">install</span><br>        <span class="hljs-attr">run:</span> <span class="hljs-string">sudo</span> <span class="hljs-string">npm</span> <span class="hljs-string">install</span> <span class="hljs-string">-g</span> <span class="hljs-string">hexo-cli</span> <span class="hljs-string">&amp;&amp;</span> <span class="hljs-string">yarn</span><br><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">build</span><br>        <span class="hljs-attr">run:</span> <span class="hljs-string">hexo</span> <span class="hljs-string">generate</span> <span class="hljs-string">&amp;&amp;</span> <span class="hljs-string">cp</span> <span class="hljs-string">README.md</span> <span class="hljs-string">./dist/</span><br><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">deploy</span><br>        <span class="hljs-attr">uses:</span> <span class="hljs-string">JamesIves/github-pages-deploy-action@4.0.0</span><br>        <span class="hljs-attr">with:</span><br>          <span class="hljs-attr">branch:</span> <span class="hljs-string">gh-pages</span><br>          <span class="hljs-attr">folder:</span> <span class="hljs-string">dist</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="独立域名"><a href="# 独立域名" class="headerlink" title="独立域名"></a>独立域名 </h3><p> 在 <code>source</code> 下建立 <code>CNAME</code> 文件，写入本站的域名</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs text">12345.blog<br></code></pre></td></tr></table></figure>
+
+<h3 id="增加 -https- 支持"><a href="# 增加 -https- 支持" class="headerlink" title="增加 https 支持"></a>增加 <code>https</code> 支持</h3><ol>
+<li>将 <code>NS</code> 切换到 <a target="_blank" rel="noopener" href="https://cloudflare.com/">CloudFlare</a></li>
+<li>确认 <code>DNS</code> 的 <code>CNAME</code> 解析正确</li>
+<li>然后开启 <code>SSL</code> 的默认配置</li>
+</ol>
+<hr>
+<p>终 <THE END></p>
+
+                </section>
+
+                
+                
+    <div id="al_gitalk_cnt">
+    <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script>
+        var gitalk = new Gitalk({
+            clientID: "218f7255dbb3f92486e0",
+            clientSecret: "f93df66c267c6a641454ee6a4cf33d2d55d70250",
+            repo: "gitalk",
+            owner: "12345blog",
+            admin: "hineosmith",
+            id: "Hexo 搭建记录 Hello World",
+        });
+        gitalk.render("al_gitalk_cnt")
+    </script>
+                
+
+            </article>
+
+            
+            <nav class="dis_flex al_post_nav">
+                <a class="al_post_nav_item dis_flex_acenter" href="/2021/blog-here/">
+                    
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
+                        </svg>
+                        <span class="al_text_ellipsis al_post_nav_desc">博客初建</span>
+                    
+                </a>
+                <a class="al_post_nav_item dis_flex_acenter" href="/">
+                    
+                </a>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="al_index_footer dis_flex_center">
+    <div class="al_index_footer_item al_index_footer_title">
+        Neo Smith
+    </div>
+
+    
+    
+
+    <div class="al_index_footer_item al_index_footer_extra">
+        Created By 
+        <a target="_blank" rel="noopener" href="https://github.com/iGuan7u/Acetolog">AcetoLog</a>
+         · Power By 
+        <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>
+    </div>
+
+    <div class="al_index_footer_item al_index_footer_extra_right">
+        All Right Reserved
+    </div>
+</div>
+
+        <script type="text/javascript" async="async" src="/javascripts/acelog.js"></script>
+        
+        
+    <script src="//hm.baidu.com/hm.js?582eedb88e03346b456d315000357414"></script>
+
+        
+    <script src="//www.googletagmanager.com/gtag/js?id=G-QCFG5YFJC3"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);};gtag('js', new Date());gtag('config', '${theme.google_analytice.tracking_id}');</script>
+
+        
+    </body>
+</html>
+        
