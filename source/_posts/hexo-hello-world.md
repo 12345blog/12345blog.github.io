@@ -99,7 +99,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: timezone
-        run: export TZ='Asia/Shanghai'
+        run: export TZ='Asia/Shanghai'  # 使用中国时区
 
       - name: checkout
         uses: actions/checkout@v2
@@ -135,6 +135,15 @@ jobs:
 2. 确认 `DNS` 的 `CNAME` 解析正确
 3. 然后开启 `SSL` 的默认配置
 
+
+
+## 使用 ImgBot 自动压缩优化图片文件
+
+很方便：自动压缩优化图片文件，提高访问速度。
+
+进入 GitHub 的 [Marketplace](https://github.com/marketplace) 找到 [ImgBot](https://github.com/marketplace/imgbot) 执行一下安装，本站的代码库开源（免费使用 ImgBot，开源库都可以免费使用它），然后这货会自动发现可以压缩优化的图片，自动提交 PR 到代码库。
+
+比如本站的第 1 次 PR [链接在此](https://github.com/12345blog/12345blog.github.io/pull/1)，压掉了 21% 的图片体积，咱只管 Merge 合并就可以了……
 
 ---------
 
