@@ -17,8 +17,11 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: hexo-cli
+        run: sudo npm install -g hexo-cli
+
       - name: install
-        run: sudo npm install -g hexo-cli && yarn
+        run: yarn
 
       - name: build
         run: hexo generate && cp README.md ./dist/
