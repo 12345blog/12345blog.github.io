@@ -10,7 +10,13 @@ excerpt: 经济运行逻辑正在发生变化
 然后呢？怎样配置金融资产？
 
 
-## 史前：经济机器是怎样运行的 -- Ray Dalio
+## 史前：经济机器~~曾经~~是怎样运行的（瑞·达利欧）
+
+> 原标题**《经济机器是怎样运行的 (时长30分钟) Ray Dalio》**
+>
+> 引自 YouTube 频道 [Principles by Ray Dalio](https://www.youtube.com/channel/UCqvaXJ1K3HheTPNjH-KpwXQ)
+>
+> 请自备梯子
 
 <div style="position: relative; height:0; padding-bottom: 56.25%">
 <iframe style="position: absolute; left:0; top:0; width:100%; height:100%"
@@ -21,7 +27,11 @@ excerpt: 经济运行逻辑正在发生变化
 
 ## 全球大放水：劫贫济富的货币政策
 
-坑已挖好，待填……
+> 如果说曾经的世界是 2% 的人掌握 98% 的社会财富，那么未来：
+> 
+> 2% 的人掌握 120% 的社会财富，而那 98% 的任务是 —— 负债 20%
+> 
+> -- Neo Smith
 
 
 ## 房子真的是用来住的？
