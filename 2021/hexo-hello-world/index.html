@@ -145,6 +145,7 @@
 <h3 id="配置-gitalk"><a href="#配置-gitalk" class="headerlink" title="配置 gitalk"></a>配置 <code>gitalk</code></h3><p>在 <code>themes/Acetolog/_config.yml</code> 中配置 <code>gitalk</code> 段：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">gitalk:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">clientID:</span> <span class="hljs-string">xxx</span>  <span class="hljs-comment"># 填你自己的 Client ID</span><br>  <span class="hljs-attr">clientSecret:</span> <span class="hljs-string">xxx</span>  <span class="hljs-comment"># 填你自己的 Client secret</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">gitalk</span>  <span class="hljs-comment"># 专用的 repo 库名</span><br>  <span class="hljs-attr">owner:</span> <span class="hljs-string">username</span>  <span class="hljs-comment"># 所有者，GitHub 用户名或者组织用户名</span><br>  <span class="hljs-attr">admin:</span> <span class="hljs-string">username</span>  <span class="hljs-comment"># 管理员，填你自己的 GitHub 用户名</span><br></code></pre></td></tr></table></figure>
 <p>基本不必担心 <code>Client secret</code> 因为开源泄露，因为回调地址已经在 <code>OAuth App</code> 里配置好了……</p>
+<p>PS: 配置这玩意儿踩了好久的坑，配置文件里各项用途，见上边的备注，后来者鉴</p>
 <hr>
 <p>PEACE</p>
 <p>终</p>
