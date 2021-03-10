@@ -14,8 +14,6 @@ jobs:
         with:
           persist-credentials: false
 
-      - run: sudo npm install -g hexo-cli
-
       # https://github.com/actions/cache/blob/main/examples.md#node---yarn
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
@@ -29,6 +27,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
+      - run: sudo npm install -g hexo-cli
       - run: yarn
       - run: hexo generate && cp README.md ./dist/
       - uses: JamesIves/github-pages-deploy-action@4.0.0
