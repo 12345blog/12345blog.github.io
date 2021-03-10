@@ -9,25 +9,29 @@ jobs:
   auto-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: timezone
-        run: export TZ='Asia/Shanghai'
-
-      - name: checkout
-        uses: actions/checkout@v2
+      - run: export TZ='Asia/Shanghai'
+      - uses: actions/checkout@v2
         with:
           persist-credentials: false
 
-      - name: hexo-cli
-        run: sudo npm install -g hexo-cli
+      - run: sudo npm install -g hexo-cli
 
-      - name: install
-        run: yarn
+      # https://github.com/actions/cache/blob/main/examples.md#node---yarn
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
 
-      - name: build
-        run: hexo generate && cp README.md ./dist/
+      - uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
 
-      - name: deploy
-        uses: JamesIves/github-pages-deploy-action@4.0.0
+      - run: yarn
+      - run: hexo generate && cp README.md ./dist/
+      - uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
           branch: gh-pages
           folder: dist
